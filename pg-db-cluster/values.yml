@@ -1,0 +1,16 @@
+nameOverride: "percona-db"
+pgPrimary:
+  replicaCount: 1
+
+postgres:
+  users:
+    myuser:
+      password: mypassword
+  databases:
+    mydb: myuser
+
+pgBouncer:
+  enabled: false
+
+backup:
+  enabled: false
